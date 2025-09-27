@@ -5,6 +5,11 @@ This repository contains the Homebrew formula for [Hexa CLI](https://github.com/
 ## Installation
 
 ```bash
+# Add the tap first (recommended)
+brew tap hyphaene/hexa
+brew install hexa
+
+# Or direct install
 brew install hyphaene/hexa/hexa
 ```
 
