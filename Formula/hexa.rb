@@ -5,13 +5,13 @@
 class Hexa < Formula
   desc "Hexactitude CLI - Unified automation and scripting toolkit"
   homepage "https://github.com/hyphaene/hexa"
-  version "0.2.0"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hyphaene/hexa/releases/download/v0.2.0/hexa_Darwin_x86_64.tar.gz"
-      sha256 "3106ecc0b33b4e4484fce7d027d22b1adc11ccab50b445233ad68a5c4aa12bf5"
+      url "https://github.com/hyphaene/hexa/releases/download/v0.2.2/hexa_Darwin_x86_64.tar.gz"
+      sha256 "d1a29f1927ab8e5682185b0686b3ecb21353af8a7fc0c633a6e58c2bbb3a314a"
 
       def install
         bin.install "hexa"
@@ -19,8 +19,8 @@ class Hexa < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hyphaene/hexa/releases/download/v0.2.0/hexa_Darwin_arm64.tar.gz"
-      sha256 "dcd8cc1904c858c913a9eff418f074a24685fa17c297ef12d1fe1a6e54670f63"
+      url "https://github.com/hyphaene/hexa/releases/download/v0.2.2/hexa_Darwin_arm64.tar.gz"
+      sha256 "7ec819b5cd780176932e60972973eabea531037ac532a3b2a4292c0eb14458e9"
 
       def install
         bin.install "hexa"
@@ -31,16 +31,16 @@ class Hexa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hyphaene/hexa/releases/download/v0.2.0/hexa_Linux_x86_64.tar.gz"
-      sha256 "45169534a1099f3e64c98d2941bdc4754df2fbb7a0e4f7f6388df2ce9433433e"
+      url "https://github.com/hyphaene/hexa/releases/download/v0.2.2/hexa_Linux_x86_64.tar.gz"
+      sha256 "afd81bada39acd42bdda50c8de34a6c8ac860df232f28b8d1799890965e266d4"
       def install
         bin.install "hexa"
         bin.install_symlink bin/"hexa" => "hw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hyphaene/hexa/releases/download/v0.2.0/hexa_Linux_arm64.tar.gz"
-      sha256 "857299bffc2d594f2c75b2ccae4cb4951dc3b97cd4041b35a1ad3db128672079"
+      url "https://github.com/hyphaene/hexa/releases/download/v0.2.2/hexa_Linux_arm64.tar.gz"
+      sha256 "5260b8d2cef8fa7fe03f7c21b49ca9989780ea292fb76dae693ef6f0642c3c2e"
       def install
         bin.install "hexa"
         bin.install_symlink bin/"hexa" => "hw"
